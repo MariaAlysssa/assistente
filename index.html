@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="style.css">
    
+   
 
 
     <!--box icons-->
@@ -15,7 +16,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
     
-</head>
+
 <body>
 
     <header class="header">
@@ -28,7 +29,11 @@
             <a href="#sobre">Sobre</a>
             <a href="#sigaa">SIGAA</a>
             <a href="#contatos">Contatos</a>
-            <a href="#traducao">Tradução</a>
+            <a href="#problema">Problema</a>
+            <a href="traducao.html">Tradução</a>
+
+            <span class="active-navbar"></span>
+
         </nav>
     </header>
 
@@ -90,9 +95,10 @@
 
     <div class="container">
         
-        <h2 class="heading"><span>Normas</span> do Instituto</h2>
+       
 
     <section class="normas" id="normas">
+        <h2 class="heading"><span>Normas</span> do Instituto</h2>
 
         <div class="normas-row">
             <div class="normas-column">
@@ -226,9 +232,6 @@
 
         </div>
     </div>
-    </section>
-
-            <section class="normas-av" id="normas-av">
 
         
                 <div class="normas-row">
@@ -298,6 +301,34 @@
         
                                 </div>
                             </div>
+
+                            <div class="normas-content">
+                                <div class="content">
+                                    <div class="resolution"><i class="fas fa-balance-scale"></i> <b>Art 34°</b></div>
+                                    <h3>Exame Final</h3>
+                                    <p>O Exame Final consiste numa avaliação única e escrita por disciplina, aplicado no 
+                                        final de cada período letivo ou ao término de um curso específico, cujos assuntos
+                                         serão estabelecidos pelo professor, podendo contemplar todo o conteúdo ou os conteúdos 
+                                         julgados como de maior importância para o discente no período letivo.
+                                    </p>
+        
+                                </div>
+                            </div>
+
+                            <div class="normas-content">
+                                <div class="content">
+                                    <div class="resolution"><i class="fas fa-balance-scale"></i> <b>Art 48°</b></div>
+                                    <h3>Recuperação Paralela</h3>
+                                    <p>É o processo de recuperação da aprendizagem que será desenvolvido simultaneamente no 
+                                        decorrer do curso em relação à determinada disciplina cuja nota tenha sido inferior 
+                                        a seis (< 6,0). Atividades desenvolvidas e orientadas pelos docentes das disciplinas 
+                                        com o apoio da Equipe Técnico-Pedagógica e Diretoria de Ensino.
+                                    </p>
+        
+                                </div>
+                            </div>
+
+
                             
                             <div class="normas-content">
                                 <div class="content">
@@ -373,7 +404,7 @@
         
         <div class="sigaa-row">
             <div class="sigaa-column">
-                <h3 class="title"> Como funciona?</h3>
+                <h3 class="title"></h3>
 
                 <div class="sigaa-box">
                     <div class="sigaa-content">
@@ -389,15 +420,16 @@
 
     <!--CONTATOS design-->
 
-    <section class="contatos" id="contatos">
-        <h2 class="heading">Contatos dos <span>Departamentos</span></h2>
-        <section class="departamentos" id="departamentos">
+   
+        
+        <section class="contatos" id="contatos">
+            <h2 class="heading">Contatos dos <span>Departamentos</span></h2>
 
-            <div class="departamentos-row">
-                <div class="departamentos-column">
+            <div class="contatos-row">
+                <div class="contatos-column">
     
-                    <div class="departamentos-box">
-                        <div class="departamentos-content">
+                    <div class="contatos-box">
+                        <div class="contatos-content">
                             <div class="content">
                                 <div class="resolution"><i class='bx bxs-envelope'></i></div>
                                 <h3>DIRETORIA GERAL</h3>
@@ -410,7 +442,7 @@
                             </div>
                         </div>
                         
-                        <div class="departamentos-content">
+                        <div class="contatos-content">
                             <div class="content">
                                 <div class="resolution"><i class='bx bxs-envelope'></i></div>
                                 <h3>DEPARTAMENTO DE ENSINO PESQUISA E EXTENSÃO - DEPEX</h3>
@@ -423,7 +455,7 @@
                             </div>
                         </div>
     
-                        <div class="departamentos-content">
+                        <div class="contatos-content">
                             <div class="content">
                                 <div class="resolution"><i class='bx bxs-envelope'></i></div>
                                 <h3>DEPARTAMENTO DE ADMINISTRAÇÃO E PLANEJAMENTO - DAP</h3>
@@ -437,46 +469,53 @@
     
                             </div>
                         </div>
-</div>
-                   
+            </div>
+</section>             
 
-                    
-<h2 class="heading">Caixa de <span>Email</span></h2>
-        <form action="enviar_email.php" method="post">
-            <div class="input-box">
-              <div class="input-field">
+<section class="problema" id="problema">           
+    <h2 class="heading">Reportar <span>Problema</span></h2>
+    <form action="enviar_email.php" method="post">
+        <div class="input-box">
+            <div class="input-field">
                 <input type="text" placeholder="Insira Nome" required>
                 <span class="focus"></span>
-              </div>
-              <div class="input-field">
+            </div>
+            <div class="input-field">
                 <input type="text" placeholder="Endereço de Email" required>
                 <span class="focus"></span>
-              </div>
             </div>
+        </div>
 
-            <div class="input-box">
-                <div class="input-field">
-                    <input type="number" placeholder="Número de Telefone" required>
-                    <span class="focus"></span>
-                </div>
-                <div class="input-field">
-                    <input type="text" placeholder="Email Destinatário" required>
-                    <span class="focus"></span>
-                </div>
-            </div>
-
-            <div class="textarea-field">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Sua Mensagem"></textarea>
+        <div class="input-box">
+            <div class="input-field">
+                <input type="number" placeholder="Número de Telefone" required>
                 <span class="focus"></span>
             </div>
-
-            <div class="btn-box btns">
-                <button type="submit" class="btn">Enviar</button>
+            <div class="input-field">
+                <input type="text" placeholder="Email Destinatário" value="2022308945@ifam.edu.br" readonly>
+                <span class="focus"></span>
             </div>
+        </div>
 
-        </form>
-    </section>
+        <div class="textarea-field">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Descreva o problema que você encontrou no site"></textarea>
+            <span class="focus"></span>
+        </div>
+
+        <div class="btn-box btns">
+            <button type="submit" class="btn">Enviar</button>
+        </div>
+    </form>   
 </section>
+
+<footer class="footer">
+    <div class="footer-text">
+        <p></p>
+    </div>
+    <div class="footer-iconTop">
+        <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
+</footer>
 
     <script src="script.js"></script>
     
