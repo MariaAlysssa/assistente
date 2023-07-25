@@ -557,6 +557,11 @@ span{
     font-weight: bold;
 }
 
+.link-arquivo{
+    color: var(--main-color);
+    font-weight: bold;
+}
+
 .footer{
     display: flex;
     justify-content: space-between;
