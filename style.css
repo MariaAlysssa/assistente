@@ -607,12 +607,12 @@ span{
 
 
 /*------------------------------------*/
-@media (max-width:1450px){
+/*@media (max-width:1450px){
     .home{
         background: none;
     }
    
-}
+}*/
 
 @media (max-width:1200px){
     html{
@@ -636,6 +636,10 @@ span{
    .footer{
     padding: 2rem  4%;
    }
+
+     .home{
+        background: none;
+    }
 }
 
 @media (max-width:768px){
