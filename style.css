@@ -637,9 +637,9 @@ span{
     padding: 2rem  4%;
    }
 
-   /*  .home{
+     .home{
         background: none;
-    }*/
+    }
 }
 
 @media (max-width:768px){
@@ -715,10 +715,7 @@ span{
         flex-basis: 100%;
       }
 
-      .home{
-        background: none;
-    }
-    
+   
 
 }
 
