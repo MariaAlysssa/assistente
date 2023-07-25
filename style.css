@@ -714,6 +714,10 @@ span{
       .normas-row {
         flex-basis: 100%;
       }
+
+      .home{
+        background: none;
+    }
     
 
 }
