@@ -36,3 +36,16 @@ window.onscroll = () => {
   menuIcon.classList.remove('bx-x');
   navbar.classList.remove('active');
 };
+
+const inputEmail = document.getElementById('email');
+const labelEmail = document.querySelector('.input-field label[for="email"]');
+
+inputEmail.addEventListener('focus', () => {
+    labelEmail.classList.add('active');
+});
+
+inputEmail.addEventListener('blur', () => {
+    if (inputEmail.value === '') {
+        labelEmail.classList.remove('active');
+    }
+});

@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="style.css">
+    
    
    
 
@@ -69,7 +70,7 @@
         <h2 class="heading">Sobre o <span>Instituto</span></h2>
 
         <div class="sobre-img">
-            <img src="ifam mpu sobre.jpeg" alt="">
+            <img src="img/ifam mpu sobre.jpeg" alt="">
 
             <span class="circle-spin"></span>
 
@@ -398,7 +399,7 @@
 </div>
     
 
-    <!--SIGAA design
+    <!--SIGAA design-->
     <section class="sigaa" id="sigaa">
         <h2 class="heading"><span>SIGAA</span></h2>
         
@@ -410,13 +411,89 @@
                     <div class="sigaa-content">
                         <div class="content">
                             <div class="resolution"></div>
+                            <h3>Sistema Integrado de Gestão de Atividades Acadêmicas</h3>
+                            <p> Foi desenvolvido para servir como um espaço de gerenciamento de disciplinas e de todas as informações 
+                                relativas à vida acadêmica do aluno.</p>
                         </div>
                     </div>
+
+                    <div class="sigaa-content">
+                        <div class="content">
+                            <div class="resolution"></div>
+                            <h3>Aluno - Auto Cadastro</h3>
+                            <p>Para realizar o cadastro será necessário que o aluno esteja matriculado na Instituição <br>
+                                <b>Vamos aos passos:</b> <br>
+                                1. Acessar o link: <a href="https://sig.ifam.edu.br/sigaa/verTelaLogin.do" class="link-contato">SIGAA</a><br>
+                                2. Clique no ícone: <a href="https://sig.ifam.edu.br/sigaa/public/cadastro/discente.jsf" class="link-contato">Aluno Cadastre-se</a><br>
+
+                                <img src="imgSigaa/cadastroSigaa.png" alt="cadastro"> <br>
+
+                                Em seguida, será exibida a tela que lhe permitirá a inserção de seus dados para a 
+                                realização do cadastro.<br>
+
+                                3. Preencher os campos:<br>
+
+                                <img src="imgSigaa/preenchimentoSigaa.png" alt="cadastro"><br>
+
+                                <b>Matrícula: </b> Informe o número de sua matrícula.<br>
+                                <b>Nível: </b> Selecione o nível que você está cursando. Se você é estrangeiro, marque a
+                                caixinha.<br>
+                                <b>CPF/Login: </b> Informe o número do seu CPF.<br>
+                                <b>Nome: </b> Informe o seu nome completo.<br>
+                                <b>RG: </b> Informe o seu RG.<br>
+                                <b>Data de Nascimento: </b> Informe sua data de nascimento ou clique no ícone <i class='bx bxs-calendar'></i> <br>
+                                <b>Email: </b> Informe seu e-mail.<br>
+                                <b>Ano/Semestre Inicial: </b> Informe o ano e o semestre de ingresso.<br>
+                                <b>Senha: </b> Informe uma senha.<br>
+                                <b>Confirmar Senha: </b> Confirme a senha informada anteriormente.<br>
+
+                                4. Clicar em Cadastrar<br>
+                                Em seguida será exibida uma mensagem de sucesso confirmando o cadastro. Feito o cadastro,
+                                o aluno pode se logar no SIGAA utilizando o número do CPF no login e a senha registrada.<br>
+
+                                <img src="imgSigaa/confirmacaoSigaa.png" alt="cadastro"><br>
+                                
+
+                                
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="sigaa-content">
+                        <div class="content">
+                            <div class="resolution"></div>
+                            <h3>Aluno - Emitir Boletim</h3>
+                            <p> Para emitir o boletim e vê suas médias nas matérias, aperte em “<b>Ensino</b>” e
+                                depois em “<b>Emitir Boletim</b>”, conforme mostra as imagens: <br>
+
+                                <img src="imgSigaa/ensinoSigaa.png" alt="boletim"> 
+                                <img src="imgSigaa/emissaoSigaa.png" alt="boletim">
+                                
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="sigaa-content">
+                        <div class="content">
+                            <div class="resolution"></div>
+                            <h3>Aluno - Notas Individuais</h3>
+                            <p> Para ver as notas em cada matéria, clique em na matéria que deseja consultar,
+                                clique no botão “<b>Alunos</b>”, em seguida clique em “<b>Ver notas</b>” e aparecerá uma
+                                página mostrando as notas em cada bimestre, conforme mostra as imagens:
+                                 <br>
+
+                                <img src="imgSigaa/notasSigaa.png" alt="notas">
+                                <img src="imgSigaa/verNotas.png" alt="notas">
+                                
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
         
-    </section>-->
+    </section>
 
     <!--CONTATOS design-->
 
@@ -470,7 +547,7 @@
                             </div>
                         </div>
 
-                         <div class="contatos-content">
+                        <div class="contatos-content">
                             <div class="content">
                                 <div class="resolution"><i class='bx bxs-envelope'></i></div>
                                 <h3>PROTOCOLO DO CAMPUS MANACAPURU</h3>
@@ -494,35 +571,46 @@
 
 <section class="problema" id="problema">           
     <h2 class="heading">Reportar <span>Problema</span></h2>
-    <form action="enviar_email.php" method="post">
-        <div class="input-box">
-            <div class="input-field">
+
+        <form action="https://formsubmit.co/cmariaalyssa@gmail.com" method="POST">
+           
+       <div class="input-box">
+          <!--   <div class="input-field">
                 <input type="text" placeholder="Insira Nome" required>
                 <span class="focus"></span>
-            </div>
+            </div>-->
             <div class="input-field">
-                <input type="text" placeholder="Endereço de Email" required>
+                <label for="email">Insira seu email:</label>
+                <input type="email" name="email" id="email" required>
                 <span class="focus"></span>
             </div>
         </div>
 
-        <div class="input-box">
+      <!--  <div class="input-box">
             <div class="input-field">
                 <input type="number" placeholder="Número de Telefone" required>
                 <span class="focus"></span>
             </div>
             <div class="input-field">
-                <input type="text" placeholder="Email Destinatário" value="2022308945@ifam.edu.br" readonly>
+                <input type="text" placeholder="Email Destinatário" value="cmariaalyssa@gmail.com" readonly>
                 <span class="focus"></span>
             </div>
-        </div>
+        </div>-->
 
         <div class="textarea-field">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Descreva o problema que você encontrou no site"></textarea>
-            <span class="focus"></span>
+         <!-- <textarea name="" id="" cols="30" rows="10" placeholder="Descreva o problema que você encontrou no site"></textarea>--> 
+          <label for="message">Descreva o problema que você encontrou no site:</label>
+          <textarea name="message" id="message" rows="4" cols="50" required></textarea>
+
+          <span class="focus"></span>
         </div>
 
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/#problema/thanks.html">
+
+
+
         <div class="btn-box btns">
+
             <button type="submit" class="btn">Enviar</button>
         </div>
     </form>   
