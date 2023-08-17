@@ -92,7 +92,7 @@ section{
     display: flex;
     align-items: center;
     padding: 0 9%;
-    background: url('assistencia-ao-aluno__5_-removebg-preview.png') no-repeat;
+    background: url('/img/assistencia-ao-aluno__5_-removebg-preview.png') no-repeat;
 
     background-size: 600px 400px;
     background-position: right;
@@ -450,21 +450,46 @@ span{
 
 .problema form .input-box .input-field{
     position: relative;
-    width: 49%;
+    width: 100%;
     margin: .8rem 0;
 }
 
+.textarea-field label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.textarea-field textarea {
+    width: 300px; /* Largura desejada */
+    height: 150px; /* Altura desejada */
+    resize: both; /* Permite redimensionamento vertical e horizontal */
+    word-wrap: break-word; /* Permite que as palavras se ajustem ao tamanho da caixa */
+}
+
+.input-field label,
+.input-field input,
+.textarea-field label {
+    font-size: 13px; /* Tamanho de fonte desejado */
+}
+
+/* Opcionalmente, você também pode ajustar o tamanho do texto no span de foco */
+.input-field .focus {
+    font-size: 16px; /* Tamanho de fonte desejado */
+}
+
 .problema form .input-box .input-field input,
-.problema form .textarea-field textarea{
+.problema form .textarea-field textarea  {
     width: 100%;
-    height: 100%;
+    
     padding: 1.5rem;
-    font-size: 1.6rem;
+    
     color: var(--text-color);
     background: transparent;
     border-radius: .6rem;
     border: .2rem solid var(--main-color);
 }
+
+
 
 .contatos{
     display: flex;
@@ -610,12 +635,12 @@ span{
 
 
 /*------------------------------------*/
-/*@media (max-width:1450px){
+@media (max-width:1450px){
     .home{
         background: none;
     }
    
-}*/
+}
 
 @media (max-width:1200px){
     html{
@@ -639,10 +664,6 @@ span{
    .footer{
     padding: 2rem  4%;
    }
-
-     .home{
-        background: none;
-    }
 }
 
 @media (max-width:768px){
@@ -717,10 +738,6 @@ span{
       .normas-row {
         flex-basis: 100%;
       }
-
-      .home{
-        background: none;
-    }
     
 
 }

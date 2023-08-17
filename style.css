@@ -12,20 +12,20 @@
     
 }
 
-/*:root{
-    --bg-color: #081b29;
-    --second-bg-color: #112e42;
-    --text-color: #ededed;
-    --main-color: #00abf0;
-}*/
-
-
 :root{
+    --bg-color: #FFFFFE;
+    --second-bg-color: #D9F8FF;
+    --text-color: #000000;
+    --main-color: #3CACAE;
+}
+
+
+/*:root{
     --bg-color: #E0F4EF;
     --second-bg-color: #cffcf0;
     --text-color: #112e42;
     --main-color: #72C24E;
-}
+}*/
 
 
 
@@ -94,7 +94,7 @@ section{
     display: flex;
     align-items: center;
     padding: 0 9%;
-    background: url('assistencia-ao-aluno__4_-removebg-preview.png') no-repeat;
+    background: url('/img/assistencia-ao-aluno__4_-removebg-preview.png') no-repeat;
 
     background-size: 600px 400px;
     background-position: right;
@@ -428,9 +428,99 @@ span{
 
 
 .sigaa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: auto;
+    padding-bottom: 5rem;
     background: var(--second-bg-color);
 }
 
+
+.sigaa .sigaa-row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.sigaa-row .sigaa-column{
+    flex: 1 1 40rem;
+}
+
+.sigaa-column .title{
+    font-size: 2.5rem;
+    margin: 0 0 1.5rem 2rem;
+}
+
+.sigaa-column .sigaa-box{
+    border-left: .2rem solid var(--main-color);
+}
+
+.sigaa-box .sigaa-content{
+    position: relative;
+    padding-left: 2rem;
+}
+
+.sigaa-box .sigaa-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -1.1rem;
+    width: 2rem;
+    height: 2rem;
+    background: var(--main-color);
+    border-radius: 50%;
+}
+
+.sigaa-content .content{
+    position: relative;
+    padding: 1.5rem;
+    border: .2rem solid var(--main-color);
+    border-radius: .6rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.sigaa-content .content::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+   background: var(--bg-color);
+   z-index: -1;
+   transition: .5s;
+
+}
+
+.sigaa-content .content:hover:before{
+    width: 100%;
+}
+
+.sigaa-content .content .resolution{
+    font-size: 1.5rem;
+    color: var(--main-color);
+    padding-bottom: .5rem;
+
+}
+
+.sigaa-content .content .resolution i{
+    padding-right: .5rem;
+}
+
+.sigaa-content .content h3{
+    font-size: 2rem;
+}
+
+.sigaa-content .content p{
+    font-size: 1.6rem;
+    padding-top: .5rem;
+}
+
+
+/********************************/
 .problema{
     min-height: auto;
     padding-bottom: 7rem;
@@ -452,16 +542,42 @@ span{
 
 .problema form .input-box .input-field{
     position: relative;
-    width: 49%;
+    width: 100%;
     margin: .8rem 0;
+}
+/**/
+
+/**/
+
+.textarea-field label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.textarea-field textarea {
+    width: 300px; /* Largura desejada */
+    height: 150px; /* Altura desejada */
+    resize: both; /* Permite redimensionamento vertical e horizontal */
+    word-wrap: break-word; /* Permite que as palavras se ajustem ao tamanho da caixa */
+}
+
+.input-field label,
+.input-field input,
+.textarea-field label {
+    font-size: 13px; /* Tamanho de fonte desejado */
+}
+
+/* Opcionalmente, você também pode ajustar o tamanho do texto no span de foco */
+.input-field .focus {
+    font-size: 16px; /* Tamanho de fonte desejado */
 }
 
 .problema form .input-box .input-field input,
-.problema form .textarea-field textarea{
+.problema form .textarea-field textarea  {
     width: 100%;
-    height: 100%;
+    
     padding: 1.5rem;
-    font-size: 1.6rem;
+    
     color: var(--text-color);
     background: transparent;
     border-radius: .6rem;
@@ -609,15 +725,21 @@ span{
     color: var(--bg-color);
 }
 
+img{
+    width: 500px;
+}
+
+
+
 
 
 /*------------------------------------*/
-/*@media (max-width:1450px){
+@media (max-width:1450px){
     .home{
         background: none;
     }
    
-}*/
+}
 
 @media (max-width:1200px){
     html{
@@ -641,10 +763,11 @@ span{
    .footer{
     padding: 2rem  4%;
    }
+   
 
-     .home{
-        background: none;
-    }
+   
+   
+  
 }
 
 @media (max-width:768px){
@@ -719,8 +842,7 @@ span{
       .normas-row {
         flex-basis: 100%;
       }
-
-   
+    
 
 }
 
@@ -763,6 +885,10 @@ span{
         .footer p{
             margin-top: 2rem;
         }
+
+        img {
+            width: 100%;
+          }
 
     }
 
